@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-image: url(images/DSC_3681_Large_edited.png);
+    background-size:cover;  
+    background-attachment: fixed;
+    flex-direction: column;
+  }
+  
+  
+  header {
+    position: fixed;
+    border: 5px;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    justify-content:space-between;
+    height: 25%;
+    width: 100%;
+    align-items: top;
+    font-family: 'Rubik', sans-serif;
+    
+    
+    background-color: rgb(109, 85, 165, 0.00);
+  }
+  
+  .logo {
+    background-image: url(images/forma_luz_logo_VECTORx.png);
+      box-sizing: border-box;
+      /* padding: 35px; */
+      width: 14%;
+      /* left: 115px;  */
+       height: 0;
+       margin-top: 4%;
+       margin: 15px;
+       padding-bottom: 12.4%;
+       background-size:cover;
+       background-position: center;
+      /* z-index: 1; */
+  } 
+.tituloParrafo{
+  margin-top: 1%;
+  padding: 1%;
+  flex-direction: column;
+  height: 45%;
+  width: 50%;
+  text-align: center;
+  
+}
+.tituloParrafo p{
+  padding-top: 10px;
+  color: rgb(174, 192, 209);
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+   
+h1 {
+  font-size: 22px;
+  padding-top: 0;
+  padding-left:0%;
+  padding-bottom: 20px;
+}
+
+.barra {
+    padding-top: 30px;
+    display: flex;
+    list-style: none;
+    align-items: top;
+    /* margin: 0;
+    padding: 0; */
+    
+}
+
+.barra ul li {
+    list-style: none;
+    display: inline-flex;
+    margin-right: 15px;
+}
+
+.barra a {
+    text-decoration: none;
+    color: rgb(243, 233, 233);
+}
+
+.barra a:hover{
+  color: black;
+}
+  body h1 {
+    background-color: rgb(109, 85, 165, 0.0);
+    color: whitesmoke;
+  }
+
+main {
+  position: relative;
+  display: inline-flex;
+  margin-left: 10%;
+  margin-top: 15%;
+  margin-bottom: 6%;
+  box-sizing: border-box;
+  background-color: rgb(109, 85, 165, 0.7);
+  border-radius: 10px; /* Esquinas levemente redondeadas */
+  padding: 1%;
+  height: 500px;
+  width: 80%;
+  flex-direction: row;
+}
+.nico {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  height: 100%; /* La imagen ocupa la altura completa del contenedor */
+  width: auto; /* Ajusta el ancho en forma proporcional */ 
+  border-radius: 10px; /* Esquinas levemente redondeadas */
+}
+
+.parrafos {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  font-family: 'Rubik', Sans Serif;
+  font-size: 14px;
+  color: aliceblue;
+  flex-direction: column;
+  background-color: rgba(156, 125, 31, 0);
+  justify-content: space-around;
+  overflow: auto;
+}
+.parrafos p {
+  padding: 5px;
+  text-indent: 5%;
+}
+
+.prodDesc {
+  width: 50%;
+
+}
+.prodDesc p {
+  padding: 5px;
+  text-indent: 5%;
+  color: lightgrey;
+}
+.prodDesc h2{
+  color: whitesmoke;
+}
+
+.galeria {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+.galeria-imagen {
+  /* width: 100%;*/
+  max-width: 400px; 
+  height: auto;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* .galeria-imagen:hover {
+  transform: scale(2);
+} */
+
+.formulario {
+  width: 80%;
+  height: fit-content;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(109, 85, 165, 0.07);
+    text-align: right;
+    padding: 10px;
+}
+
+.redes-sociales img {
+  width: 30px; /* Ajusta el tamaño de los iconos según tus necesidades */
+  margin-left: 10px; /* Ajusta el espacio entre los iconos */
+  filter: brightness(0) invert(1); /* Aplica el filtro para cambiar a blanco */
+}
