@@ -11,7 +11,7 @@ body {
     display: flex;
     width: 100%;
     height: auto;
-    background-image: url(images/DSC_3681_Large_edited.png);
+    background-image: url(../images/DSC_3681_Large_edited.png);
     background-size:cover;  
     background-attachment: fixed;
     flex-direction: column;
@@ -34,7 +34,7 @@ body {
   }
   
   .logo {
-    background-image: url(images/forma_luz_logo_VECTORx.png);
+    background-image: url(../images/forma_luz_logo_VECTORx.png);
       box-sizing: border-box;
       /* padding: 35px; */
       width: 14%;
@@ -104,6 +104,7 @@ main {
   display: inline-flex;
   margin-left: 10%;
   margin-top: 15%;
+  padding-top: 25%;
   margin-bottom: 6%;
   box-sizing: border-box;
   background-color: rgb(109, 85, 165, 0.7);
