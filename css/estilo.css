@@ -1,126 +1,165 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Rubik', Sans Serif;
 }
 
 body {
-    display: flex;
-    width: 100%;
-    height: auto;
-    background-image: url(../images/DSC_3681_Large_edited.png);
-    background-size:cover;  
-    background-attachment: fixed;
-    flex-direction: column;
-  }
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-image: url(../images/DSC_3681_Large_edited.png);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+/* header {
+  position: fixed;
+  border: 5px;
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  justify-content: space-between;
+  height: 25%;
+  width: 100%;
+  align-items: top;
+  font-family: 'Rubik', sans-serif;
+
+
+  background-color: rgb(109, 85, 165, 0.00);
+} */
+
+.logo {
+  background-image: url(../images/forma_luz_logo_VECTORx.png);
+  box-sizing: border-box;
+  /* padding: 35px; */
+  width: 14%;
+  /* left: 115px;  */
+  height: 0;
+  margin-top: 4%;
+  margin: 15px;
+  padding-bottom: 12.0%;
+  background-size: cover;
+  background-position: center;
+  /* z-index: 1; */
+}
+
+/* .navbar-brand{
+  height: 40px;
+} */
+.navbar-custom {
+  padding-top: 0px !important;
+}
+.navbar-brand img{
+height:100px;
+
+}
+
+main{
+  box-sizing: border-box;
+  padding: 30px;
+  max-height: 60vh;
+}
+
+
+.texto-color{
+color: rgb(238, 231, 237);  
+}
+.enmarcado {
+  display: flex;
+  /* flex-direction: column; */
+  height: calc(100vh - 150px);
+  background-color: rgb(109, 85, 165, 0.7);
+  border-radius: 10px;
+  margin:0 10px;
+  padding: 15px;
   
-  
-  header {
-    position: fixed;
-    border: 5px;
-    display: flex;
-    font-family: 'Rubik', sans-serif;
-    justify-content:space-between;
-    height: 25%;
-    width: 100%;
-    align-items: top;
-    font-family: 'Rubik', sans-serif;
-    
-    
-    background-color: rgb(109, 85, 165, 0.00);
-  }
-  
-  .logo {
-    background-image: url(../images/forma_luz_logo_VECTORx.png);
-      box-sizing: border-box;
-      /* padding: 35px; */
-      width: 14%;
-      /* left: 115px;  */
-       height: 0;
-       margin-top: 4%;
-       margin: 15px;
-       padding-bottom: 12.4%;
-       background-size:cover;
-       background-position: center;
-      /* z-index: 1; */
-  } 
-.tituloParrafo{
+}
+
+.col-md-6 {
+  height: 100%;
+}
+/* <div class="col-xs-6 col-sm-5 col-md-8 pl-5 pr-5"> */
+
+.scroll-container {
+  max-height: 90vh;
+  overflow-y: auto;}
+
+
+.tituloParrafo {
   margin-top: 1%;
   padding: 1%;
   flex-direction: column;
   height: 45%;
   width: 50%;
   text-align: center;
-  
+
 }
-.tituloParrafo p{
+
+.tituloParrafo p {
   padding-top: 10px;
   color: rgb(174, 192, 209);
   border: 1px solid gray;
   border-radius: 8px;
 }
-   
+
 h1 {
   font-size: 22px;
   padding-top: 0;
-  padding-left:0%;
+  padding-left: 0%;
   padding-bottom: 20px;
 }
 
 .barra {
-    padding-top: 30px;
-    display: flex;
-    list-style: none;
-    align-items: top;
-    /* margin: 0;
+  padding-top: 30px;
+  display: flex;
+  list-style: none;
+  align-items: top;
+  /* margin: 0;
     padding: 0; */
-    
+
 }
 
 .barra ul li {
-    list-style: none;
-    display: inline-flex;
-    margin-right: 15px;
+  list-style: none;
+  display: inline-flex;
+  margin-right: 15px;
 }
 
 .barra a {
-    text-decoration: none;
-    color: rgb(243, 233, 233);
+  text-decoration: none;
+  color: rgb(243, 233, 233);
 }
 
-.barra a:hover{
+.barra a:hover {
   color: black;
 }
-  body h1 {
-    background-color: rgb(109, 85, 165, 0.0);
-    color: whitesmoke;
-  }
 
-main {
-  position: relative;
-  display: inline-flex;
-  margin-left: 10%;
-  margin-top: 15%;
-  padding-top: 25%;
-  margin-bottom: 6%;
-  box-sizing: border-box;
-  background-color: rgb(109, 85, 165, 0.7);
-  border-radius: 10px; /* Esquinas levemente redondeadas */
-  padding: 1%;
-  height: 500px;
-  width: 80%;
-  flex-direction: row;
+body h1 {
+  background-color: rgb(109, 85, 165, 0.0);
+  color: whitesmoke;
 }
+
+
+
 .nico {
   padding-top: 10px;
   padding-bottom: 10px;
   box-sizing: border-box;
-  height: 100%; /* La imagen ocupa la altura completa del contenedor */
-  width: auto; /* Ajusta el ancho en forma proporcional */ 
-  border-radius: 10px; /* Esquinas levemente redondeadas */
+  height: 100%;
+  /* La imagen ocupa la altura completa del contenedor */
+  width: auto;
+  /* Ajusta el ancho en forma proporcional */
+  border-radius: 10px;
+  /* Esquinas levemente redondeadas */
 }
 
 .parrafos {
@@ -135,6 +174,7 @@ main {
   justify-content: space-around;
   overflow: auto;
 }
+
 .parrafos p {
   padding: 5px;
   text-indent: 5%;
@@ -144,12 +184,14 @@ main {
   width: 50%;
 
 }
+
 .prodDesc p {
   padding: 5px;
   text-indent: 5%;
   color: lightgrey;
 }
-.prodDesc h2{
+
+.prodDesc h2 {
   color: whitesmoke;
 }
 
@@ -161,7 +203,7 @@ main {
 
 .galeria-imagen {
   /* width: 100%;*/
-  max-width: 400px; 
+  max-width: 400px;
   height: auto;
   margin-right: 10px;
   border-radius: 8px;
@@ -188,7 +230,8 @@ label {
   margin-bottom: 8px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 16px;
@@ -211,16 +254,22 @@ button:hover {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(109, 85, 165, 0.07);
-    text-align: right;
-    padding: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(109, 85, 165, 0.0);
+  text-align: right;
+  padding: 10px;
+  }
+.pie{
+  height: 50px;
 }
-
 .redes-sociales img {
-  width: 30px; /* Ajusta el tamaño de los iconos según tus necesidades */
-  margin-left: 10px; /* Ajusta el espacio entre los iconos */
-  filter: brightness(0) invert(1); /* Aplica el filtro para cambiar a blanco */
+  width: 30px;
+  /* Ajusta el tamaño de los iconos según tus necesidades */
+  margin-left: 10px;
+  /* Ajusta el espacio entre los iconos */
+  filter: brightness(0) invert(1);
+  /* Aplica el filtro para cambiar a blanco */
 }
