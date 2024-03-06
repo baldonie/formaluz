@@ -6,251 +6,68 @@
   box-sizing: border-box;
   font-family: 'Rubik', Sans Serif;
 }
+.bg-custom{
+  background-color: rgba(56, 28, 134, 0.541);
+  padding: 10px;
+  /* max-height: calc(100vh - 180px); */
+}
+.texto-color {
+  color: rgb(238, 231, 237);
+  font-family: 'Rubik', Sans Serif;
+}
+
+/* main {
+  height: calc(100vh - 250px);
+} */
+main {
+  flex-grow: 1; /* Para que ocupe el espacio restante en la columna principal*/
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
 
 body {
   display: flex;
+  /* width: 100%; */
   width: 100%;
-  height: auto;
+  /* height: auto; */
   background-image: url(../images/DSC_3681_Large_edited.png);
   background-size: cover;
   background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-  display: flex;
   flex-direction: column;
-  height: 100vh;
-}
-
-
-/* header {
-  position: fixed;
-  border: 5px;
-  display: flex;
-  font-family: 'Rubik', sans-serif;
-  justify-content: space-between;
-  height: 25%;
-  width: 100%;
-  align-items: top;
-  font-family: 'Rubik', sans-serif;
-
-
-  background-color: rgb(109, 85, 165, 0.00);
-} */
-
-.logo {
-  background-image: url(../images/forma_luz_logo_VECTORx.png);
-  box-sizing: border-box;
-  /* padding: 35px; */
-  width: 14%;
-  /* left: 115px;  */
-  height: 0;
-  margin-top: 4%;
-  margin: 15px;
-  padding-bottom: 12.0%;
-  background-size: cover;
-  background-position: center;
-  /* z-index: 1; */
-}
-
-/* .navbar-brand{
-  height: 40px;
-} */
-.navbar-custom {
-  padding-top: 0px !important;
-}
-.navbar-brand img{
-height:100px;
-
-}
-
-main{
-  box-sizing: border-box;
-  padding: 30px;
-  max-height: 60vh;
-}
-
-
-.texto-color{
-color: rgb(238, 231, 237);  
-}
-.enmarcado {
-  display: flex;
-  /* flex-direction: column; */
-  height: calc(100vh - 150px);
-  background-color: rgb(109, 85, 165, 0.7);
-  border-radius: 10px;
-  margin:0 10px;
-  padding: 15px;
-  
-}
-
-.col-md-6 {
-  height: 100%;
-}
-/* <div class="col-xs-6 col-sm-5 col-md-8 pl-5 pr-5"> */
-
-.scroll-container {
-  max-height: 90vh;
-  overflow-y: auto;}
-
-
-.tituloParrafo {
-  margin-top: 1%;
-  padding: 1%;
-  flex-direction: column;
-  height: 45%;
-  width: 50%;
-  text-align: center;
-
-}
-
-.tituloParrafo p {
-  padding-top: 10px;
-  color: rgb(174, 192, 209);
-  border: 1px solid gray;
-  border-radius: 8px;
-}
-
-h1 {
-  font-size: 22px;
-  padding-top: 0;
-  padding-left: 0%;
-  padding-bottom: 20px;
-}
-
-.barra {
-  padding-top: 30px;
-  display: flex;
-  list-style: none;
-  align-items: top;
-  /* margin: 0;
-    padding: 0; */
-
-}
-
-.barra ul li {
-  list-style: none;
-  display: inline-flex;
-  margin-right: 15px;
-}
-
-.barra a {
-  text-decoration: none;
-  color: rgb(243, 233, 233);
-}
-
-.barra a:hover {
-  color: black;
-}
-
-body h1 {
-  background-color: rgb(109, 85, 165, 0.0);
-  color: whitesmoke;
-}
-
-
-
-.nico {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  box-sizing: border-box;
-  height: 100%;
-  /* La imagen ocupa la altura completa del contenedor */
-  width: auto;
-  /* Ajusta el ancho en forma proporcional */
-  border-radius: 10px;
-  /* Esquinas levemente redondeadas */
+  /* height: 100%; */
 }
 
 .parrafos {
-  padding: 10px;
-  display: flex;
-  width: 100%;
-  font-family: 'Rubik', Sans Serif;
-  font-size: 14px;
-  color: aliceblue;
-  flex-direction: column;
-  background-color: rgba(156, 125, 31, 0);
-  justify-content: space-around;
-  overflow: auto;
+  /* max-width: 600px; */
+  text-align: justify; /* Alinea el texto justificado */
+  padding: 20px; /* Agrega un relleno para mejorar la legibilidad */
+  max-height: calc(100vh - 200px);/* Ajusta según la altura del header y footer, y el padding
+  */
 }
 
-.parrafos p {
-  padding: 5px;
-  text-indent: 5%;
+.scroll-container {
+  max-height: calc(100vh - 170px);
+  /* max-width: 74vh; */
+  overflow-y: auto;
 }
 
-.prodDesc {
-  width: 50%;
-
+.nico {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+  height: auto; /* Para mantener la proporción de la imagen */
+  border-radius: 10px; /* Agrega esquinas redondeadas a la imagen si lo deseas */
 }
 
-.prodDesc p {
-  padding: 5px;
-  text-indent: 5%;
-  color: lightgrey;
+
+
+
+
+.navbar-custom {
+  padding-top: 0px !important;
 }
 
-.prodDesc h2 {
-  color: whitesmoke;
-}
-
-.galeria {
-  display: flex;
-  overflow-x: auto;
-  margin-top: 15px;
-}
-
-.galeria-imagen {
-  /* width: 100%;*/
-  max-width: 400px;
-  height: auto;
-  margin-right: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-/* .galeria-imagen:hover {
-  transform: scale(2);
-} */
-
-.formulario {
-  width: 80%;
-  height: fit-content;
-  margin: auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  box-sizing: border-box;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
+.navbar-brand img {
+  height: 100px;
 }
 
 footer {
@@ -261,10 +78,8 @@ footer {
   background-color: rgb(109, 85, 165, 0.0);
   text-align: right;
   padding: 10px;
-  }
-.pie{
-  height: 50px;
 }
+
 .redes-sociales img {
   width: 30px;
   /* Ajusta el tamaño de los iconos según tus necesidades */
