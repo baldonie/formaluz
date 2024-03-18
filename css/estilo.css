@@ -6,61 +6,71 @@
   box-sizing: border-box;
   font-family: 'Rubik', Sans Serif;
 }
-.bg-custom{
-  background-color: rgba(56, 28, 134, 0.541);
+
+.bg-custom {
+  background-color: rgba(0, 2, 14, 0.575);
   padding: 10px;
   /* max-height: calc(100vh - 180px); */
 }
+
 .texto-color {
   color: rgb(238, 231, 237);
-  font-family: 'Rubik', Sans Serif;
+  font-family: 'Rubik', Sans Serif !important;
+  text-indent: 25px;
+  text-align: justify;
 }
 
 /* main {
   height: calc(100vh - 250px);
 } */
 main {
-  flex-grow: 1; /* Para que ocupe el espacio restante en la columna principal*/
+  flex-grow: 1;
+  /* Para que ocupe el espacio restante en la columna principal*/
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
 }
 
 body {
   display: flex;
-  /* width: 100%; */
   width: 100%;
-  /* height: auto; */
   background-image: url(../images/DSC_3681_Large_edited.png);
   background-size: cover;
   background-attachment: fixed;
   flex-direction: column;
-  /* height: 100%; */
+
 }
 
 .parrafos {
-  /* max-width: 600px; */
-  text-align: justify; /* Alinea el texto justificado */
-  padding: 20px; /* Agrega un relleno para mejorar la legibilidad */
-  max-height: calc(100vh - 200px);/* Ajusta según la altura del header y footer, y el padding
+  text-align: justify;
+  /* Alinea el texto justificado */
+  padding: 20px;
+  /* Agrega un relleno para mejorar la legibilidad */
+  max-height: calc(100vh - 200px);
+  /* Ajusta según la altura del header y footer, y el padding
   */
 }
 
 .scroll-container {
   max-height: calc(100vh - 170px);
-  /* max-width: 74vh; */
   overflow-y: auto;
 }
 
-.nico {
-  max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
-  height: auto; /* Para mantener la proporción de la imagen */
-  border-radius: 10px; /* Agrega esquinas redondeadas a la imagen si lo deseas */
+
+.contenido-tab {
+  height: 80vh;
 }
 
+.fullheight {
+  height: 95%;
+  max-height: 75vh;
+}
 
-
-
+.customheight{
+max-height: calc(100%);
+}
 
 .navbar-custom {
   padding-top: 0px !important;
